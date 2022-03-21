@@ -1,0 +1,17 @@
+dependencies:
+  - OpenZeppelin/openzeppelin-contracts@4.1.0
+compiler:
+  solc:
+    remappings:
+      - '@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.1.0'
+dotenv: .env
+wallets:
+  local-cli:
+    - address: "0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1"
+      private_key: ${LOCAL_CLI_WALLET_0_PRIVATE_KEY}
+  local-ui:
+    - address: "0x087C56b7EFa666034dcBE93b92FB8e662F80B4dE"
+      private_key: ${LOCAL_UI_WALLET_0_PRIVATE_KEY}
+  metamask:
+    - address: "0x199b0021D48b938DF485d2e0748F3665438FAe7b"
+      private_key: ${METAMASK_WALLET_0_PRIVATE_KEY}
